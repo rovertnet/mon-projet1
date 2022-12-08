@@ -6,7 +6,6 @@ function Bannier(){
             <h1 className='lmj-title'>{titre}</h1>
         </div>
     )
-    return <h1>{titre}</h1>
 }
 
 export default Bannier
