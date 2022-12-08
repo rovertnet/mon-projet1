@@ -6,8 +6,13 @@
     display: flex;
     justify-content: flex-end;
     flex-direction: row;
+    background-color: black;
 }
 
 .lmj-title {
-    padding-left: 32px;
+    position: relative;
+    text-align: center;
+    color: aqua;
+    font-size: 36px;
+    font-weight: bold;
 }

@@ -3,8 +3,9 @@ import Cart from './Carts';
 
 function App() {
   return(
-    <Bannier />,
-    <Cart />
+    <div>
+      <Bannier /><Cart />
+    </div>
   )
 }
 

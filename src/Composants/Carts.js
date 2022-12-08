@@ -9,11 +9,11 @@ function Cart() {
             <div>
                 <h2>Panier</h2>
                 <ul>
-                    <li>Monstera : {monsteraPrice}€</li>
-                    <li>ivyPrice : {ivyPrice}€</li>
-                    <li>flowerPrice : {flowerPrice}€</li>
+                    <li>Element0 : {monsteraPrice}€</li>
+                    <li>Element1 : {ivyPrice}€</li>
+                    <li>Element2 : {flowerPrice}€</li>
                 </ul>
-                Total : {monsteraPrice + ivyPrice + flowerPrice}€
+                Total : {monsteraPrice * ivyPrice + flowerPrice}€
             </div>
         </div>
     )
