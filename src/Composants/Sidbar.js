@@ -4,13 +4,13 @@ import {Link} from 'react-router-dom'
 
 const Sidbar = () => {
   return (
-    <main>
-        <header className='header'>
+    <main className='space-toggle'>
+          <header className='header space-toggle'>
             <div className='header-toggle'>
                 <i class="fas fa-bars"></i>
             </div>
         </header>
-        <aside className='sidebar'>
+        <aside className='sidebar show'>
             <nav className='nav'>
                 <div>
                     <Link to="/" className='nav-logo'>
@@ -18,7 +18,7 @@ const Sidbar = () => {
                         <span className='nav-logo-name'>  Home page</span>
                     </Link>
                     <div className='nav-list'>
-                        <Link to="/dashboard" className='nav-link'>
+                        <Link to="/dashboard" className='nav-link active'>
                             <i className='fas fa-tachometer nav-logo-icon'></i>
                             <span className='nav-list-name'>  DashBoard</span>
                         </Link>
