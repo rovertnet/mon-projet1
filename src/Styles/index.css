@@ -1,13 +1,87 @@
-body {
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-        sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+:root{
+    --header-height : 3rem;
+    --nav-width : 68px;
+    --first-color : #f0f2f4;
+    --first-color-alt : #f582a7;
+    --white-color : #57c0f9;
 }
-
-code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-        monospace;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: #f0f2f4;
+}
+ul{
+    list-style: none;
+}
+main{
+    position: relative;
+    margin: var(--header-height) 0 0 0;
+    padding: 0 1rem;
+    font-size: 1rem;
+    font-family: 'Nunito Sans', sans-serif;
+    transition: 0.5s;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: var(--header-height);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--white-color);
+    padding: 0 1rem;
+    transition: .5s;
+}
+.header-toggle{
+    font-size: 1.25rem;
+    cursor: pointer;
+    color: var(--first-color);
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: var(--nav-width);
+    padding-top: 1rem;
+    transition: 0.5s;
+    background-color: #142139;
+}
+.nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    height: 100%;
+}
+.nav-logo,
+.nav-link{
+    display: grid;
+    grid-template-columns: max-content max-content;
+    column-gap: 2rem;
+    padding: 0.5rem 0 0.5rem 1.5rem;
+}
+.nav-logo{
+    margin-bottom: 2rem;
+    color: aliceblue;
+}
+.nav-logo-icon{
+    font-size: 1.25rem;
+    color: rgb(241, 220, 220);
+    cursor: pointer;
+}
+.nav-logo-name{
+    font-weight: 700;
+    color: var(--white-color);
+}
+.nav-link{
+    color: var(--first-color-alt);
+    transition: 0.5s;
+    margin-bottom: 1.5rem;
 }

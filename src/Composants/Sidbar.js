@@ -10,38 +10,39 @@ const Sidbar = () => {
                 <i class="fas fa-bars"></i>
             </div>
         </header>
-        <aside className='aside'>
+        <aside className='sidebar'>
             <nav className='nav'>
                 <div>
                     <Link to="/" className='nav-logo'>
-                        <i class='fas fa-home-alt nav-logo-icon'></i>
+                        <i className='fas fa-home-alt nav-logo-icon'></i>
                         <span className='nav-logo-name'>  Home page</span>
                     </Link>
                     <div className='nav-list'>
-                        <Link to="/dashboard" className='nav-logo'>
-                            <i class='fas fa-tachometer nav-logo-icon'></i>
+                        <Link to="/dashboard" className='nav-link'>
+                            <i className='fas fa-tachometer nav-logo-icon'></i>
                             <span className='nav-list-name'>  DashBoard</span>
                         </Link>
-                        <Link to="/client" className='nav-logo'>
-                            <i class='fas fa-users nav-logo-icon'></i>
+                        <Link to="/client" className='nav-link'>
+                            <i className='fas fa-users nav-logo-icon'></i>
                             <span className='nav-list-name'>  Client</span>
                         </Link>
-                        <Link to="/article" className='nav-logo'>
-                            <i class='fas fa-basket-shopping nav-logo-icon'></i>
+                        <Link to="/article" className='nav-link'>
+                            <i className='fas fa-basket-shopping nav-logo-icon'></i>
                             <span className='nav-list-name'>  Article</span>
                         </Link>
-                        <Link to="/autres" className='nav-logo'>
-                            <i class='fas fa-sliders nav-logo-icon'></i>
+                        <Link to="/autres" className='nav-link'>
+                            <i className='fas fa-sliders nav-logo-icon'></i>
                             <span className='nav-list-name'>  Autres gestions</span>
                         </Link>
                     </div>
                 </div>
-                <Link to="/deconnexion" className='nav-logo'>
-                      <i class="fas fa-right-to-bracket nav-logo-icon"></i>
+                <Link to="/deconnexion" className='nav-link'>
+                      <i className="fas fa-right-to-bracket nav-logo-icon"></i>
                     <span className='nav-list-name'>  Déconnexion</span>
                 </Link>
             </nav>
         </aside>
+        <h1>Content</h1>
     </main>
   )
 }
