@@ -4,8 +4,8 @@ import {Link} from 'react-router-dom'
 
 const Sidbar = () => {
   return (
-      <main className='space-toggle'>
-          <header className='header space-toggle'>
+    <main className='space-toggle'>
+        <header className='header space-toggle'>
             <div className='header-toggle'>
                 <i class="fas fa-bars"></i>
             </div>
