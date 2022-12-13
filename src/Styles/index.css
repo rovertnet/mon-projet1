@@ -3,7 +3,7 @@
     --nav-width : 68px;
     --first-color : #f0f2f4;
     --first-color-alt : #f582a7;
-    --white-color : #f5f7f8;
+    --white-color : #85d4fb;
 }
 *{
     margin: 0;
@@ -78,7 +78,7 @@ main{
 }
 .nav-logo-name{
     font-weight: 700;
-    color: var(--white-color);
+    color: var(--first-color);
 }
 .nav-link{
     position: relative;

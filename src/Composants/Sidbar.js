@@ -42,7 +42,19 @@ const Sidbar = () => {
                 </Link>
             </nav>
         </aside>
-        <h1>Content</h1>
+        <h1>DashBoard</h1>
+        <div className='container'>
+            <div className='row'>
+                <div className='col-lg-6'>
+                    <label>Nom</label>
+                    <input className='form-control' />
+                </div>
+                <div className='col-lg-6'>
+                    <label>Nom</label>
+                    <input className='form-control' />
+                </div>
+            </div>
+        </div>
     </main>
   )
 }
